@@ -16,13 +16,13 @@ set AOC_DIR "/home/dan/Documents/aoc2022"
 set AOC_URL_BASE "https://adventofcode.com/2022/day"
 
 # AOC Session is not set
-if set -q $AOC_SESSION
+if test -z "$AOC_SESSION"
     echo "AOC Session is not set!"
     echo "Please enter 'set -x AOC_SESSION <session key>"
     exit 1
 end
 
-if set -q $argv[1]
+if test -z "$argv[1]"
     echo "Need the day we are working with, please enter the advent day"
     echo "Example: ./prep.fish 5"
     exit 2
