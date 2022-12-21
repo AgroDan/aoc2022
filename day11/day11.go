@@ -141,15 +141,6 @@ func (m *Monkey) Inspect() {
 	}
 }
 
-/*
-Monkey 0:
-  Starting items: 76, 88, 96, 97, 58, 61, 67
-  Operation: new = old * 19
-  Test: divisible by 3
-    If true: throw to monkey 2
-    If false: throw to monkey 3
-*/
-
 func ParseMonkeys(lines []string) []*Monkey {
 	var throwList []MonkeyState
 	var monkeyList []*Monkey
@@ -214,106 +205,6 @@ func ParseMonkeys(lines []string) []*Monkey {
 	}
 	return monkeyList
 }
-
-// func ParseMonkeys(lines []string) []*Monkey {
-// 	// this expects an empty Monkeylist and will parse each string
-
-// 	// if properly formatted, each line will look like that
-// 	var monkeyList []*Monkey
-// 	//var monkeyNum int
-// 	var startingItems []int
-// 	var operationAction string // really annoyed that I don't have a char/string conversion
-// 	var operationNum int
-// 	var testNum int
-// 	//monkeyAction := make([]map[bool]int, 0)
-// 	// monkeyAction := []MonkeyState
-// 	var monkeyAction []MonkeyState
-
-// 	//thisMonkey := make(map[bool]int)
-// 	thisMonkey := MonkeyState{}
-
-// 	//monkeyAction = append(monkeyAction, a)
-
-// 	for _, v := range lines {
-// 		// for the Monkey #: line
-// 		// if strings.HasPrefix(v, "Monkey") {
-// 		// 	// new monkey
-// 		// 	// parse the monkey number
-// 		// 	s := strings.Split(v, " ")
-// 		// 	s[1] = strings.TrimRight(s[1], ":")
-// 		// 	monkeyNum, _ := strconv.Atoi(s[1]) // may not even use this
-// 		// }
-
-// 		// for the Starting items: line
-// 		if strings.Contains(v, "Starting items") {
-// 			startingItems = nil
-// 			// set up the starting items
-// 			s := strings.Split(v, ": ")
-// 			n := strings.Split(s[1], ",")
-// 			for _, i := range n {
-// 				j, _ := strconv.Atoi(i)
-// 				startingItems = append(startingItems, j)
-// 			}
-// 		}
-
-// 		// for the "Operation" line
-// 		if strings.Contains(v, "Operation:") {
-// 			s := strings.Split(v, " ")
-// 			operationAction = s[len(s)-2]
-// 			var err error
-// 			operationNum, err = strconv.Atoi(s[len(s)-1])
-// 			if err != nil {
-// 				// Presumably, this is "old"
-// 				if s[len(s)-1] == "old" {
-// 					// this means the action is old * old
-// 					operationAction = "^"
-// 					operationNum = 0
-// 				} else {
-// 					fmt.Printf("Could not convert number in action! %s\n", v)
-// 				}
-// 			}
-// 		}
-// 		// for the "Test" line
-// 		if strings.Contains(v, "Test:") {
-// 			s := strings.Split(v, " ")
-// 			testNum, _ = strconv.Atoi(s[len(s)-1])
-// 		}
-
-// 		if strings.Contains(v, "true") {
-// 			s := strings.Split(v, " ")
-// 			num, _ := strconv.Atoi(s[len(s)-1])
-// 			//thisMonkey[true] = num
-// 			thisMonkey.trueAction = num
-// 		}
-
-// 		if strings.Contains(v, "false") {
-// 			s := strings.Split(v, " ")
-// 			num, _ := strconv.Atoi(s[len(s)-1])
-// 			// thisMonkey[false] = num
-// 			thisMonkey.falseAction = num
-
-// 			// now at this point, we should be done with the monkey.
-// 			m := NewMonkey(startingItems, operationAction, operationNum, testNum)
-// 			fmt.Printf("At this iteration, monkeyAction = +%v\n", monkeyAction)
-// 			monkeyAction = append(monkeyAction, thisMonkey)
-// 			fmt.Printf("At this iteration, monkeyAction = +%v\n", monkeyAction)
-// 			monkeyList = append(monkeyList, &m)
-// 		}
-// 	}
-// 	// now, iterate through the list
-// 	// fuck you lets see if this works
-// 	// thisMonkey[true] = 420
-// 	// thisMonkey[false] = 9001
-// 	fmt.Printf("Here's the monkeyList: +%v\n", monkeyList)
-// 	fmt.Printf("Here's the monkeyAction: +%v\n", monkeyAction)
-// 	for i, v := range monkeyList {
-// 		// v.AddTossTarget(true, monkeyList[monkeyAction[i][true]])
-// 		v.AddTossTarget(true, monkeyList[monkeyAction[i].trueAction])
-// 		// v.AddTossTarget(false, monkeyList[monkeyAction[i][false]])
-// 		v.AddTossTarget(false, monkeyList[monkeyAction[i].falseAction])
-// 	}
-// 	return monkeyList
-// }
 
 /*
 	Now, to parse -- we have to do two iterations. First, set a list
