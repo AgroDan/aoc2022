@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+Another stateful challenge. Just create a rope head and tail and give it functions which specify directions. At first this seemed fairly daunting but I figured it out eventually. Super cool.
+
 # --- Day 9: Rope Bridge ---
 
 This rope bridge creaks as you walk along it. You aren't sure how old it is, or whether it can even support your weight.

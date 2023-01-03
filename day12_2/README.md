@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+Please read what I wrote in [day12](../day12/README.md). That pretty much sums up the entire challenge and all of my failures learned from it.
+
 # --- Day 12: Hill Climbing Algorithm ---
 
 You try contacting the Elves using your handheld device, but the river you're following must be too low to get a decent signal.

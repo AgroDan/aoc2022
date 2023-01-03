@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+This was a bear to finish. Took a lot of input and had to maintain state! Following a person's directory traversal wound up being a crazy amount of code, but eventually I got it. This was a really cool challenge. The big thing I learned the most here is using pointers, which allowed me to efficiently handle memory without having to clog up the memory stack.
+
 # --- Day 7: No Space Left On Device ---
 
 You can hear birds chirping and raindrops hitting leaves as the expedition proceeds. Occasionally, you can even hear much louder sounds in the distance; how big do the animals get out here, anyway?

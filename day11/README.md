@@ -1,3 +1,9 @@
+# Dan's Introduction
+
+This is starting to get fairly complex. We have to create a fairly complex object involving monkeys that interact with each other. The objects had to be aware of each monkey and had to manipulate their contents (IE, monkey A would throw an object to monkey B, so subtract this item from monkey A and push it onto the monkey B item stack).
+
+Was complex but workable. This was a cool one.
+
 # --- Day 11: Monkey in the Middle ---
 
 As you finally start making your way upriver, you realize your pack is much lighter than you remember. Just then, one of the items from your pack goes flying overhead. Monkeys are playing Keep Away with your missing things!

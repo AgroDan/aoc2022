@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+The advent of code. 25 challenges in whatever language you want. I started in Python because that's just what I know. This was a quick and dirty example.
+
 # --- Day 1: Calorie Counting ---
 
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
@@ -43,7 +47,7 @@ In case the Elves get hungry and need extra snacks, they need to know which Elf 
 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 
-Your puzzle answer was 67016.
+Your puzzle answer was `67016`.
 
 # --- Part Two ---
 

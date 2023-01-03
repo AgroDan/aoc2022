@@ -1,3 +1,9 @@
+# Dan's Introduction
+
+More doing through python. This didn't take that long to create as well and only needed a few functions to get it to work. Regardless, it worked pretty well and quick enough to call it done.
+
+Sadly, didn't learn much here.
+
 # --- Day 2: Rock Paper Scissors ---
 
 The Elves begin to set up camp on the beach. To decide whose tent gets to be closest to the snack storage, a giant Rock Paper Scissors tournament is already in progress.

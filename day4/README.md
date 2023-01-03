@@ -1,3 +1,9 @@
+# Dan's Introduction
+
+I finally took the plunge and decided to accomplish this in Go. This is my first step in learning this language as much as I can. And I have to say that I'm loving it so far. AOC is a great way to force yourself to learn the finer nuances of a language that you are only slightly adept in. As far as Go (especially coming as I am from Python), I have to start thinking in terms of defining all objects in use and adding object functions to it. Sadly I have to say that I prefer C++'s method of defining objects and private/public functions, but whatever.
+
+This wasn't bad for someone that's only dipped his toes in the Go pool, if I do say so myself. Learned more about the specifics of objects and how to use them.
+
 # --- Day 4: Camp Cleanup ---
 
 Space needs to be cleared before the last supplies can be unloaded from the ships, and so several Elves have been assigned the job of cleaning up sections of the camp. Every section has a unique ID number, and each Elf is assigned a range of section IDs.

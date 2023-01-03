@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+This was such a cool challenge! Part 1 built the foundation, Part 2 used what you created in part 1 to actually draw letters! I loved this one so much. Once I got it to work I nearly jumped out of my chair.
+
 # --- Day 10: Cathode-Ray Tube ---
 
 You avoid the ropes, plunge into the river, and swim to shore.

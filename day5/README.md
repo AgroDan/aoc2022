@@ -1,3 +1,7 @@
+# Dan's Introduction
+
+This was a neat little challenge that had me creating a stack. The ol' Tower of Hanoi challenge. Was pretty neat and got to use a push/pop object function to get it to work pretty well. Though I did create the starting environment by hand, sorta.
+
 # --- Day 5: Supply Stacks ---
 
 The expedition can depart as soon as the final supplies have been unloaded from the ships. Supplies are stored in stacks of marked crates, but because the needed supplies are buried under many other crates, the crates need to be rearranged.
