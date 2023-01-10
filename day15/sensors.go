@@ -127,24 +127,35 @@ func GetBorder(s Sensor) []Point {
 	// for explaining this on his youtube channel.
 	retPoints := make([]Point, 0)
 
+	// let's make an unordered set
+	var exists = struct{}{}
+	borderSet := make(map[Point]struct{})
+
 	for i := 0; i <= s.distance; i++ {
 		ascLeftMost := Point{
 			X: s.self.X - (s.distance - i) - 1,
 			Y: s.self.Y - i,
 		}
+		borderSet[ascLeftMost] = exists
+
 		ascRightMost := Point{
 			X: s.self.X + (s.distance - i) + 1,
 			Y: s.self.Y - i,
 		}
+		borderSet[ascRightMost] = exists
+
 		descLeftMost := Point{
 			X: s.self.X - (s.distance - i) - 1,
 			Y: s.self.Y + i,
 		}
+		borderSet[descLeftMost] = exists
+
 		descRightMost := Point{
 			X: s.self.X + (s.distance - i) + 1,
 			Y: s.self.Y + i,
 		}
-		retPoints = append(retPoints, ascLeftMost, ascRightMost, descLeftMost, descRightMost)
+		borderSet[descRightMost] = exists
+		// retPoints = append(retPoints, ascLeftMost, ascRightMost, descLeftMost, descRightMost)
 	}
 
 	// get top most point
@@ -159,19 +170,22 @@ func GetBorder(s Sensor) []Point {
 		Y: s.self.Y + s.distance + 1,
 	}
 
-	// left most point
-	left := Point{
-		X: s.self.X - s.distance - 1,
-		Y: s.self.Y,
-	}
+	// // left most point
+	// left := Point{
+	// 	X: s.self.X - s.distance - 1,
+	// 	Y: s.self.Y,
+	// }
 
-	// right most point
-	right := Point{
-		X: s.self.X + s.distance + 1,
-		Y: s.self.Y,
-	}
+	// // right most point
+	// right := Point{
+	// 	X: s.self.X + s.distance + 1,
+	// 	Y: s.self.Y,
+	// }
 
-	retPoints = append(retPoints, top, bottom, left, right)
+	retPoints = append(retPoints, top, bottom)
+	for k := range borderSet {
+		retPoints = append(retPoints, k)
+	}
 
 	// for i := 1; i <= s.distance; i++ {
 	// 	ascLeftSide := Point{
