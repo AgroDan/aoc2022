@@ -28,7 +28,7 @@ This way if you add another point to the set, you are simply overriding the poin
 Setting a datatype of `bool` is a length of 1 bit. Why use 1 bit when you can use...no bits? *Dr. Evil pinky thing*
 
 ```go
-var exists struct{}{} // sets a composite literal struct object which is 0 bytes in length
+var exists = struct{}{} // sets a composite literal struct object which is 0 bytes in length
 
 myStructSet := make(map[Point]struct{})
 
