@@ -47,14 +47,21 @@ import (
     \"os\"
     \"bufio\"
     \"fmt\"
+    \"flag\"
+    \"time\"
 )
 
 func main() {
-    readFile, err := os.Open(\"input\")
+    t := time.Now()
+    filePtr := flag.String(\"f\", \"input\", \"Input file if not 'input'\")
 
-    if err != nil {
-        fmt.Println(err)
-    }
+	flag.Parse()
+	readFile, err := os.Open(*filePtr)
+
+	if err != nil {
+		fmt.Println(\"Fatal:\", err)
+	}
+	defer readFile.Close()
 
     fileScanner := bufio.NewScanner(readFile)
     fileScanner.Split(bufio.ScanLines)
@@ -65,8 +72,8 @@ func main() {
         lines = append(lines, fileScanner.Text())
     }
 
-    readFile.Close()
-
     // Insert code here
+
+    fmt.Printf(\"Total time elapsed: %s\\n\", time.Since(t))
 }
 "
