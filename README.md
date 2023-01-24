@@ -26,4 +26,3 @@ For now though, I will use this as a "Table of Contents" of sort to link to spec
 - [Ridiculous Math](/day17/)
 - [Breadth-First-Search](/day18/)
 - [De-duplicating Items from Slice](/day18/)
--
