@@ -24,5 +24,6 @@ For now though, I will use this as a "Table of Contents" of sort to link to spec
 - [Adding Command-Line Arguments](/day17/)
 - ["Binary Hashing"](/day17/)
 - [Ridiculous Math](/day17/)
+- [De-Duplicating Items from Slice](/day17/)
 - [Breadth-First-Search](/day18/)
-- [De-duplicating Items from Slice](/day18/)
+- [Another way to De-duplicate Items from Slice](/day18/)
