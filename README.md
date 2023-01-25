@@ -11,6 +11,7 @@ For now though, I will use this as a "Table of Contents" of sort to link to spec
 - [More complex statefulness, Draw on CRT](/day10/)
 - [Statefulness with complex structs, monkeys to be specific](/day11/)
 - [2-Dimensional Traversal](/day12/)
+- [The (somewhat hidden) enum datatype in Go](/day12_2/)
 - [Dijkstra's Algorithm](/day12_2/)
 - [Queues in Go](/day12_2/)
 - [Empty Interfaces](/day13/)
