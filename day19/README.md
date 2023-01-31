@@ -61,6 +61,8 @@ For every new robot that is built, it can't mine anything the first minute it wa
 
 Doing the above optimized my code enough that it wasn't _terrible_, but still I'm sure I could have made this better. But I've learned something about coding in general: The Sunk Cost Fallacy is a **big freakin deal**. Sometimes you are so invested in the amount of time and effort you put towards the code you've written that you'll bolt on any ol' back-peddling code just to get it to work proper. But sometimes the best thing to do is just go back and start some things over. Oh well, I'll leave you with my garbage code anyway. What is success without failure upon failure upon failure?
 
+**EDIT:** I have made a terrible mistake. Originally for the "Level 4 Optimization" as stated above, I had it looking for `theoretical_potential_geodes >= max_known_geodes`, when I _should have_ used `theoretical_potential_geodes > max_known_geodes`. That simple tweak shaved enough time down to complete Part 2 in `23m and 58s`!
+
 ## What I Learned
 
 I did manage to use an anonymous function here. That was neat. (For the theoretical geodes total, see [State.go](State.go).)
