@@ -30,3 +30,4 @@ For now though, I will use this as a "Table of Contents" of sort to link to spec
 - [Another way to De-duplicate Items from Slice](/day18/)
 - [Anonymous Functions](/day19/)
 - [Another example of Depth-First-Search](/day19/)
+- [Circular Bidirectional Linked Lists](/day20/)
