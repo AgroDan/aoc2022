@@ -31,3 +31,8 @@ For now though, I will use this as a "Table of Contents" of sort to link to spec
 - [Anonymous Functions](/day19/)
 - [Another example of Depth-First-Search](/day19/)
 - [Circular Bidirectional Linked Lists](/day20/)
+- [Read characters byte by byte](/day22/)
+- [Euclidean Modulus](/day22/)
+- [Regular Expressions](/day22/)
+- [Matrix Decision Tree](/day22/)
+- [Comparing Structs](/day22/)
